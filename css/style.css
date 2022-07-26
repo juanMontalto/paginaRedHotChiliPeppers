@@ -38,8 +38,9 @@
     margin-bottom: 50px;
 }
 
-.titulos{
+.titulos{ 
     font-size: 60px;
+    font-style: bold;
     text-align: center;
     margin-top: 250px;
     margin-bottom: 20px;
@@ -127,7 +128,8 @@ thead{
 .textoBiografia{
     display: flex;
     font-size: 180%;
-    text-align: center;
+    text-align: justify;
+    padding: 10px 15px;
     justify-content: center;
     background-color: rgba(250, 210, 132, 0.205);
     border: 3px rgba(233, 202, 145, 0.692) solid;
@@ -160,9 +162,9 @@ thead{
 
 .tienda{
     height: 1816px;
-    width: 1212px;
+    width: 1217px;
     margin: auto;
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     border: red 3px solid;
 }
 
@@ -299,7 +301,7 @@ header{
 
     .tienda{
         height: 2420px;
-        width: 908px;
+        width: 914px;
     }
     
     .albums{   
@@ -316,7 +318,7 @@ header{
     }
     .tienda{
         height: 3633px;
-        width: 604px;
+        width: 610px;
     }
 }
 
@@ -370,7 +372,7 @@ header{
     }
     .tienda{
         height: 7268px;
-        width: 300px;
+        width: 310px;
     }
 }
 @media(max-width: 550px) {
@@ -422,4 +424,11 @@ header{
     .navegacion{
         font-size: 10px;
     }
+}
+
+.navbar-nav {
+    font-size: 42px;
+    justify-content: center;
+    margin: auto;
+    font-weight: bolder;
 }
