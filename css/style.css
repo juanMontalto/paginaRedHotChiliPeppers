@@ -1,398 +1,294 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&family=Josefin+Sans:ital,wght@1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&family=Josefin+Sans:ital,wght@1,700&display=swap");
 * {
-    margin:0;
-    padding:0;
-}
+  margin: 0;
+  padding: 0; }
 
-.navegacion{
-    display: flex;
-    background: rgb(19, 18, 18);
-    justify-content: space-evenly;
-    height: 70px;
-    width: auto;
-    align-items: center;
-    z-index: -1;
-}
+.navegacion {
+  display: flex;
+  background: #131212;
+  justify-content: space-evenly;
+  height: 70px;
+  width: auto;
+  align-items: center;
+  z-index: -1; }
 
-.nav{
-    color:rgb(253, 252, 252);
-    font-size:200%;
-    font-weight:bold;
-    transition: all 200ms;
-    text-decoration: none;
-}
-
-.nav:hover{
+.nav {
+  color: #fdfcfc;
+  font-size: 200%;
+  font-weight: bold;
+  transition: all 200ms;
+  text-decoration: none; }
+  .nav:hover {
     color: #c74646c5;
     font-size: 300%;
-    transform: scale(1.15);
-}
+    transform: scale(1.15); }
 
-.tituloPrincipal{
-    font-family: 'Josefin Sans', sans-serif;
-    color: rgb(0, 0, 0);
-    font-size: 100px;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+.tituloPrincipal {
+  font-family: 'Josefin Sans', sans-serif;
+  color: black;
+  font-size: 100px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px; }
 
-.titulos{ 
-    font-size: 60px;
-    font-style: bold;
-    text-align: center;
-    margin-top: 250px;
-    margin-bottom: 20px;
-}
-
-body{
-    font-family: 'Anek Latin', sans-serif;
-    background: url(../img/background.jpg) center 70px;
-    background-repeat: no-repeat;
-    color:rgb(255, 255, 255);
-    background-color: black;
-}
-
-body:before{
-    content:"";
-    width: 100%;
-    min-height: 1150px;
-    position:absolute;
-    background: linear-gradient(180deg, rgba(255, 3, 3, 0.068), rgb(0, 0, 0));
-    z-index: -1;
-}
-
-.ajustePrincipalImagenes{
-    margin:auto;
-    height: 300px;
-    width: 1230px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.ropa{
-    background-color: white;
-    border: 3px red solid;
-}
-
-main{
-    display: flex;
-    justify-content: center;
-    margin: 70px;
-}
-
-.albums{
-    margin:auto;   
-    height: 900px;
-    width: 1211px;
-    display: flex;
-    flex-wrap: wrap;
-    grid-area: albums;
-}
-
-.redirigirPaginas{
-    text-decoration: none;
-    color: #ffffff;
-}
-.redirigirPaginas2{
-    text-decoration: bold;
-    color: #8f0202;
-}
-
-li{
-    list-style-type: none;
-}
-
-.fechas{
-    width: 1200px;
-    height: auto;
-    font-size: 35px;
-    margin: auto;
-    background-color: rgba(70, 70, 70, 0.507);
-}
-table{
-    width: 100%
-}
-th, td{
-    border: solid 1px black;
-}
-thead{
-    background-color: #660101;
-    border-bottom: solid 3px #3f0000;
-}
-.soldRojo{
-    color: rgb(196, 2, 2);
-}
-
-.textoBiografia{
-    display: flex;
-    font-size: 180%;
-    text-align: justify;
-    padding: 10px 15px;
-    justify-content: center;
-    background-color: rgba(250, 210, 132, 0.205);
-    border: 3px rgba(233, 202, 145, 0.692) solid;
-    color: rgba(233, 202, 145, 0.692);
-    margin: 20px 120px 0px 120px;
-}
-
-.nombreArtista{
-    display: flex;
-    font-size: 60px;
-    margin-top: 120px;
-    margin-bottom: 20px;
-    justify-content: center;
-    color: rgb(255, 255, 255);
-}
-
-.redesSociales{
-    display: flex;
-    justify-content: flex-start;
-    color: white;
-    text-decoration: none;
-    font-size: 35px;
-}
-
-.mainMultimedia{
-    display: flex;
-    flex-wrap: wrap;
-    grid-area: multimedia;
-}
-
-.tienda{
-    height: 1816px;
-    width: 1217px;
-    margin: auto;
-    background-color: rgb(255, 255, 255);
-    border: red 3px solid;
-    grid-area: tienda;
-}
-
-.fotoArtista{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-
-/* ---------------------------------------------------------------------------------------------- */
-
-/* GRID AREA */
+li {
+  list-style-type: none; }
 
 /* Index */
+.bodyPadreGridIndex {
+  display: grid;
+  grid-template-areas: "header" "main" "section1" "section2" "section3" "footer"; }
 
-.bodyPadreGridIndex{
-    display: grid;
-    grid-template-areas:
-    "header"
-    "main"
-    "section1"
-    "section2"
-    "section3"
-    "footer";
-}
+header {
+  grid-area: header;
+  top: 0;
+  z-index: 2; }
 
-header{
-    grid-area: header;
-    top: 0;
-    z-index: 2;
-}
-.main{
-    grid-area: main;
-}
-.section1{
-    grid-area: section1;
-}
-.section2{
-    grid-area: section2;
-}
-.section3{
-    grid-area: section3;
-}
-.footer{
-    grid-area: footer;
-    padding-top: 70px;
-}
+.main {
+  grid-area: main; }
+
+.section1 {
+  grid-area: section1; }
+
+.section2 {
+  grid-area: section2; }
+
+.section3 {
+  grid-area: section3; }
+
+.footer {
+  grid-area: footer;
+  padding-top: 70px; }
 
 /* Biografia */
+.bodyPadreGridBiografia {
+  display: grid;
+  grid-template-areas: "header " "biografias" "footer "; }
 
-.bodyPadreGridBiografia{
-    display: grid;
-    grid-template-areas:
-    "header "
-    "biografias"
-    "footer ";
-}
-.biografias{
-    grid-area: biografias;
-}
+.biografias {
+  grid-area: biografias; }
 
 /* Albumes */
-
-.padreGridBodyAlbum{
-    display: grid;
-    grid-template-areas:
-    "header"
-    "albums"
-    "footer";
-}
+.padreGridBodyAlbum {
+  display: grid;
+  grid-template-areas: "header" "albums" "footer"; }
 
 /* Multimedia */
-
-.padreGridBodyMultimedia{
-    display: grid;
-    grid-template-areas:
-    "header"
-    "multimedia"
-    "footer";
-}
+.padreGridBodyMultimedia {
+  display: grid;
+  grid-template-areas: "header" "multimedia" "footer"; }
 
 /* Tienda */
+.padreGridBodyTienda {
+  display: grid;
+  grid-template-areas: "header" "tienda" "footer"; }
 
-.padreGridBodyTienda{
-    display: grid;
-    grid-template-areas:
-    "header"
-    "tienda"
-    "footer";
-}
+.titulos {
+  font-size: 60px;
+  font-style: bold;
+  text-align: center;
+  margin-top: 250px;
+  margin-bottom: 20px; }
+
+body {
+  font-family: 'Anek Latin', sans-serif;
+  background: url(../img/background.jpg) center 70px;
+  background-repeat: no-repeat;
+  color: white;
+  background-color: black; }
+  body:before {
+    content: "";
+    width: 100%;
+    min-height: 1150px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(255, 3, 3, 0.068), black);
+    z-index: -1; }
+
+.ajustePrincipalImagenes {
+  margin: auto;
+  height: 300px;
+  width: 1230px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.ropa {
+  background-color: white;
+  border: 3px red solid; }
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 70px; }
+
+.albums {
+  margin: auto;
+  height: 900px;
+  width: 1211px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: albums; }
+
+.redirigirPaginas {
+  text-decoration: none;
+  color: #ffffff; }
+
+.redirigirPaginas2 {
+  text-decoration: bold;
+  color: #8f0202; }
+
+.fechas {
+  width: 1200px;
+  height: auto;
+  font-size: 35px;
+  margin: auto;
+  background-color: rgba(70, 70, 70, 0.507); }
+
+table {
+  width: 100%; }
+
+th, td {
+  border: solid 1px black; }
+
+thead {
+  background-color: #660101;
+  border-bottom: solid 3px #3f0000; }
+
+.soldRojo {
+  color: #c40202; }
+
+.textoBiografia {
+  display: flex;
+  font-size: 180%;
+  text-align: justify;
+  padding: 10px 15px;
+  justify-content: center;
+  background-color: rgba(250, 210, 132, 0.205);
+  border: 3px rgba(233, 202, 145, 0.692) solid;
+  color: rgba(233, 202, 145, 0.692);
+  margin: 20px 120px 0px 120px; }
+
+.nombreArtista {
+  display: flex;
+  font-size: 60px;
+  margin-top: 120px;
+  margin-bottom: 20px;
+  justify-content: center;
+  color: white; }
+
+.redesSociales {
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+  text-decoration: none;
+  font-size: 35px; }
+
+.mainMultimedia {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: multimedia; }
+
+.tienda {
+  height: 1816px;
+  width: 1217px;
+  margin: auto;
+  background-color: white;
+  border: red 3px solid;
+  grid-area: tienda; }
+
+.fotoArtista {
+  display: flex;
+  justify-content: center;
+  margin: auto; }
 
 /* ---------------------------------------------------------------------------------------------- */
-
 /* Media Queries */
+@media (max-width: 1340px) {
+  .fotoArtista {
+    height: 100%;
+    width: 100%; }
+  .textoBiografia {
+    margin: 20px 0px 0px 0px; } }
 
-@media(max-width: 1340px) {
+@media (max-width: 1254px) {
+  .ajustePrincipalImagenes {
+    height: 620px;
+    width: 620px; }
+  .fechas {
+    display: none; }
+  .tituloPrincipal {
+    font-size: 80px; }
+  .imagenMultimedia {
+    height: auto;
+    width: 100%; }
+  .tienda {
+    height: 2420px;
+    width: 914px; }
+  .albums {
+    height: 1211px;
+    width: 911px; } }
 
-    .fotoArtista{
-        height: 100%;
-        width: 100%;
-    }
-    .textoBiografia{
-        margin: 20px 0px 0px 0px;
-    }
-}
+@media (max-width: 1000px) {
+  .albums {
+    height: 1830px;
+    width: 608px; }
+  .tienda {
+    height: 3633px;
+    width: 610px; } }
 
-@media(max-width: 1254px) {
-    .ajustePrincipalImagenes{
-        height: 620px;
-        width: 620px;
-    }
-    .fechas {
-        display: none;
-    }
-    .tituloPrincipal{
-        font-size:80px
-    }
-    .imagenMultimedia{
-        height: auto;
-        width: 100%;
-    }
+@media (max-width: 898px) {
+  .ajustePrincipalImagenes {
+    height: 620px;
+    width: 620px; }
+  .tituloPrincipal {
+    font-size: 72px; } }
 
-    .tienda{
-        height: 2420px;
-        width: 914px;
-    }
-    
-    .albums{   
-        height: 1211px;
-        width: 911px;
-    }
-}
+@media (max-width: 768px) {
+  .ajustePrincipalImagenes {
+    height: 1220px;
+    width: 320px;
+    margin-bottom: 50px; }
+  .titulos {
+    font-size: 50px;
+    margin-top: 0px; }
+  .rhcpgif {
+    display: none; }
+  .tituloPrincipal {
+    font-size: 80px;
+    margin-bottom: 0px; }
+  .navegacion {
+    font-size: 14px; }
+  .textoBiografia {
+    font-size: 130%; } }
 
-@media(max-width: 1000px){
-    .albums{  
-        height: 1830px;
-        width: 608px;
-    }
-    .tienda{
-        height: 3633px;
-        width: 610px;
-    }
-}
+@media (max-width: 610px) {
+  .albums {
+    height: 3600px;
+    width: 300px; }
+  .tienda {
+    height: 7268px;
+    width: 310px; } }
 
-@media(max-width: 898px) {
-    .ajustePrincipalImagenes{
-        height: 620px;
-        width: 620px;
-    }
-    .tituloPrincipal{
-        font-size:72px
-    }
+@media (max-width: 550px) {
+  .nombreArtista {
+    font-size: 300%; }
+  .tituloPrincipal {
+    font-size: 62px; } }
 
-}
+@media (max-width: 500px) {
+  .titulos {
+    font-size: 40px;
+    margin-bottom: 20px; }
+  .navegacion {
+    font-size: 12px; }
+  .textoBiografia {
+    font-size: 100%; } }
 
-@media(max-width: 768px) {
-    .ajustePrincipalImagenes{
-        height: 1220px;
-        width: 320px;
-        margin-bottom: 50px;
-    }
-    .titulos{
-        font-size: 50px;
-        margin-top: 0px;
-    }
-    .rhcpgif{
-        display: none;
-    }
-    .tituloPrincipal{
-        font-size:80px;
-        margin-bottom:0px;
-    }
-    .navegacion{
-        font-size: 14px;
-    }
-    .textoBiografia{
-        font-size:130%;
-    }
-}
-
-@media(max-width: 610px){
-    .albums{ 
-        height: 3600px;
-        width: 300px;
-    }
-    .tienda{
-        height: 7268px;
-        width: 310px;
-    }
-}
-
-@media(max-width: 550px) {
-    .nombreArtista{
-        font-size:300%;
-    }
-    .tituloPrincipal{
-        font-size:62px
-    }
-}
-
-@media(max-width: 500px) {
-
-    .titulos{
-        font-size: 40px;
-        margin-bottom: 20px;
-    }
-
-    .navegacion{
-        font-size: 12px;
-    }
-    .textoBiografia{
-        font-size:100%;
-    }
-}
-
-@media(max-width: 450px) {
-    .nombreArtista{
-        font-size:200%;
-    }
-
-    .tituloPrincipal{
-        font-size:52px
-    }
-
-    .navegacion{
-        font-size: 10px;
-    }
-}
-
+@media (max-width: 450px) {
+  .nombreArtista {
+    font-size: 200%; }
+  .tituloPrincipal {
+    font-size: 52px; }
+  .navegacion {
+    font-size: 10px; } }
