@@ -26,8 +26,11 @@
 .tituloPrincipal {
   font-family: 'Josefin Sans', sans-serif;
   color: black;
+  height: 75px;
+  width: fit-content;
   font-size: 100px;
   text-align: center;
+  margin: auto;
   font-weight: bold;
   margin-top: 50px;
   margin-bottom: 50px; }
@@ -84,6 +87,46 @@ header {
   display: grid;
   grid-template-areas: "header" "tienda" "footer"; }
 
+/* MAPS */
+.facebook {
+  color: #0303d1; }
+
+.instagram {
+  color: #ffff57; }
+
+.twitter {
+  color: #55bee7; }
+
+/* Map - Get */
+.tituloPrincipal {
+  background-color: rgba(255, 228, 196, 0.212);
+  font-size: 100px; }
+
+/* Extend */
+.redirigirPaginas, .redirigirPaginas2, .redirigirPaginas3 {
+  font-size: 30px;
+  text-decoration: none;
+  color: #ffffff; }
+
+.redirigirPaginas2, .redirigirPaginas3 {
+  text-decoration: bold;
+  color: #f30000; }
+
+.redirigirPaginas3 {
+  font-size: 60px; }
+
+/* Mixin */
+.textoBiografia {
+  display: flex;
+  font-size: 180%;
+  text-align: justify;
+  padding: 10px 15px;
+  justify-content: center;
+  background-color: rgba(250, 210, 132, 0.205);
+  border: 3px rgba(233, 202, 145, 0.692) solid;
+  color: rgba(233, 202, 145, 0.692);
+  margin: 20px 120px 0px 120px; }
+
 .titulos {
   font-size: 60px;
   font-style: bold;
@@ -130,14 +173,6 @@ main {
   flex-wrap: wrap;
   grid-area: albums; }
 
-.redirigirPaginas {
-  text-decoration: none;
-  color: #ffffff; }
-
-.redirigirPaginas2 {
-  text-decoration: bold;
-  color: #8f0202; }
-
 .fechas {
   width: 1200px;
   height: auto;
@@ -155,20 +190,6 @@ thead {
   background-color: #660101;
   border-bottom: solid 3px #3f0000; }
 
-.soldRojo {
-  color: #c40202; }
-
-.textoBiografia {
-  display: flex;
-  font-size: 180%;
-  text-align: justify;
-  padding: 10px 15px;
-  justify-content: center;
-  background-color: rgba(250, 210, 132, 0.205);
-  border: 3px rgba(233, 202, 145, 0.692) solid;
-  color: rgba(233, 202, 145, 0.692);
-  margin: 20px 120px 0px 120px; }
-
 .nombreArtista {
   display: flex;
   font-size: 60px;
@@ -180,9 +201,9 @@ thead {
 .redesSociales {
   display: flex;
   justify-content: flex-start;
-  color: white;
   text-decoration: none;
-  font-size: 35px; }
+  font-size: 35px;
+  margin-right: 20px; }
 
 .mainMultimedia {
   display: flex;

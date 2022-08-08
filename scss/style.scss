@@ -4,7 +4,7 @@
     padding:0;
 }
 
-@import "variables", "header", "grid-area";
+@import "variables", "header", "grid-area", "maps", "extend", "mixin";
   
   .titulos {
     font-size: 60px;
@@ -60,16 +60,6 @@
     grid-area: albums;
   }
   
-  .redirigirPaginas {
-    text-decoration: none;
-    color: #ffffff;
-  }
-  
-  .redirigirPaginas2 {
-    text-decoration: bold;
-    color: #8f0202;
-  }
-  
   
   .fechas {
     width: 1200px;
@@ -92,22 +82,6 @@
     border-bottom: solid 3px #3f0000;
   }
   
-  .soldRojo {
-    color: rgb(196, 2, 2);
-  }
-  
-  .textoBiografia {
-    display: flex;
-    font-size: 180%;
-    text-align: justify;
-    padding: 10px 15px;
-    justify-content: center;
-    background-color: rgba(250, 210, 132, 0.205);
-    border: 3px rgba(233, 202, 145, 0.692) solid;
-    color: rgba(233, 202, 145, 0.692);
-    margin: 20px 120px 0px 120px;
-  }
-  
   .nombreArtista {
     display: flex;
     font-size: 60px;
@@ -120,9 +94,9 @@
   .redesSociales {
     display: flex;
     justify-content: flex-start;
-    color: white;
     text-decoration: none;
     font-size: 35px;
+    margin-right: 20px;
   }
   
   .mainMultimedia {

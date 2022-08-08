@@ -25,8 +25,11 @@
   .tituloPrincipal {
     font-family: 'Josefin Sans', sans-serif;
     color: $color-titulos;
+    height: 75px;
+    width: fit-content;
     font-size: $tam-fuente-titulos;
     text-align: center;
+    margin: auto;
     font-weight: bold;
     margin-top: 50px;
     margin-bottom: 50px;
