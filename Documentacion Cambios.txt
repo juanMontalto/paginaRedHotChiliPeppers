@@ -1,0 +1,8 @@
+En el archivo index.html sumé el SEO con las siguientes características:
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: 
+
+“El sitio web de los Red Hot Chili Peppers, en la que encontrarás música, imágenes, videos, ropa, fechas de conciertos y mucho más"
+
+Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: "HTML, BANDA, RED, HOT, CHILI, PEPPERS, ROCK, FUNKY, MUSICA"
+
+Encabezado: para el encabezado del h1 utilicé el texto “Red Hot Chili Peppers”
