@@ -1,4 +1,4 @@
-En el archivo index.html sumé el SEO con las siguientes características:
+En todas las páginas sumé el SEO con las siguientes características:
 Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: 
 
 “El sitio web de los Red Hot Chili Peppers, en la que encontrarás música, imágenes, videos, ropa, fechas de conciertos y mucho más"
