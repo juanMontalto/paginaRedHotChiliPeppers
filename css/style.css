@@ -32,8 +32,7 @@
   text-align: center;
   margin: auto;
   font-weight: bold;
-  margin-top: 50px;
-  margin-bottom: 50px; }
+  margin-top: 50px; }
 
 li {
   list-style-type: none; }
@@ -59,10 +58,6 @@ header {
 
 .section3 {
   grid-area: section3; }
-
-.footer {
-  grid-area: footer;
-  padding-top: 70px; }
 
 /* Biografia */
 .bodyPadreGridBiografia {
@@ -99,8 +94,8 @@ header {
 
 /* Map - Get */
 .tituloPrincipal {
-  background-color: rgba(255, 228, 196, 0.212);
-  font-size: 100px; }
+  background-color: rgba(255, 228, 196, 0);
+  font-size: 1 0px; }
 
 /* Extend */
 .redirigirPaginas, .redirigirPaginas2, .redirigirPaginas3 {
@@ -127,6 +122,34 @@ header {
   color: rgba(233, 202, 145, 0.692);
   margin: 20px 120px 0px 120px; }
 
+/* Footer */
+.footer {
+  grid-area: footer;
+  padding-top: 70px; }
+
+.logoFooter {
+  display: flex;
+  margin: auto;
+  padding-bottom: 40px; }
+
+.tituloRedesSociales {
+  color: red;
+  font-size: 40px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  padding-bottom: 5px; }
+
+.redesSociales {
+  width: 100%; }
+  .redesSociales li {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: auto;
+    padding-top: 10px;
+    padding-bottom: 6px; }
+
 .titulos {
   font-size: 60px;
   font-style: bold;
@@ -136,7 +159,7 @@ header {
 
 body {
   font-family: 'Anek Latin', sans-serif;
-  background: url(../img/background.jpg) center 70px;
+  background: url(../img/inicio/background.jpg) center 70px;
   background-repeat: no-repeat;
   color: white;
   background-color: black; }
@@ -167,6 +190,7 @@ main {
 
 .albums {
   margin: auto;
+  margin-top: 30px;
   height: 900px;
   width: 1211px;
   display: flex;
@@ -196,7 +220,7 @@ thead {
   margin-top: 120px;
   margin-bottom: 20px;
   justify-content: center;
-  color: white; }
+  color: red; }
 
 .redesSociales {
   display: flex;
@@ -214,6 +238,7 @@ thead {
   height: 1816px;
   width: 1217px;
   margin: auto;
+  margin-top: 30px;
   background-color: white;
   border: red 3px solid;
   grid-area: tienda; }
@@ -223,7 +248,6 @@ thead {
   justify-content: center;
   margin: auto; }
 
-/* ---------------------------------------------------------------------------------------------- */
 /* Media Queries */
 @media (max-width: 1340px) {
   .fotoArtista {
@@ -273,7 +297,7 @@ thead {
   .titulos {
     font-size: 50px;
     margin-top: 0px; }
-  .rhcpgif {
+  .rhcpPrincipal {
     display: none; }
   .tituloPrincipal {
     font-size: 80px;
@@ -287,6 +311,9 @@ thead {
   .albums {
     height: 3600px;
     width: 300px; }
+  .tituloPrincipal {
+    font-size: 70px;
+    margin-bottom: 0px; }
   .tienda {
     height: 7268px;
     width: 310px; } }
