@@ -171,7 +171,7 @@ body {
     background: linear-gradient(180deg, rgba(255, 3, 3, 0.068), black);
     z-index: -1; }
 
-.fotoArtista .imagenMultimedia {
+.imagenMultimedia {
   width: 90%;
   height: 8%;
   margin: 10px;
