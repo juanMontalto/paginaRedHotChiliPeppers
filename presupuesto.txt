@@ -1,0 +1,52 @@
+PRESUPUESTO DE WEB
+
+VALIDO HASTA EL 30/08/2022
+
+NOMBRE
+RED HOT CHILI PEPPERS
+
+FECHA
+16/08/2022
+
+Nro Proyecto
+1
+
+El objetivo es tener una página con estilo minimalista, diseño llamativo, y facil de interactuar
+constara con 5 páginas, Inicio, Biografía, Albums, Multimedia y Tienda.
+Mantenimiento del hosting, actualizacion de plugins y contenidos, cambios de diseño y agregar/quitar
+páginas.
+
+Tiempo para realizar sitio web: 20 días hábiles
+
+[1]Programar sitio web       $50 (USD)
+[2]Diseño del sitio web      $50 (USD)
+[3]Carga al servidor 000wh   $15  (USD)
+[4]Seo Basic y Google An.    $35  (USD)
+[5]Mantenimiento Mensual     $100 (USD)
+[6]Seguridad Standar         $150 (USD)
+
+TOTAL:                       $400 (USD)
+
+[1]Programar en html, scss y css con Visual Studio Code.
+[2]Diseño Minimalista, con paleta de colores llamativa, muy intuitiva la página.
+[3]Carga al servidor 000WebHost
+[4]Aplicaremos SEO basic para que las visualizaciones de la página suban, e instalaremos google
+analytics para poder visualizar las visitas del sitio
+[5]Mantenimiento de 1 vez por mes por tema de plugins, contenidos, cambios de diseño y agregar
+/quitar páginas
+[6]Seguridad standar que permitirá mantener su página libre de errores, caidas de servidor, robos, etc
+
+Términos y
+Condiciones
+* El pago se ralizará 50% al iniciar el proyecto y 50% al finalizar.
+* Una vez aprobado el pressupuesto se redactará un breve contrato que tendrá que ser
+firmado por cliente y proveedor con los servicios y clausulas detallados.
+
+
+Montalto J. Studio
+
+Nombre: Juan Montalto
+
+Direccion: Buenos Aires
+
+

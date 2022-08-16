@@ -171,6 +171,12 @@ body {
     background: linear-gradient(180deg, rgba(255, 3, 3, 0.068), black);
     z-index: -1; }
 
+.fotoArtista .imagenMultimedia {
+  width: 90%;
+  height: 8%;
+  margin: 10px;
+  border: #830101 solid 2px; }
+
 .ajustePrincipalImagenes {
   margin: auto;
   height: 300px;
@@ -181,7 +187,7 @@ body {
 
 .ropa {
   background-color: white;
-  border: 3px red solid; }
+  border: 3px #830101 solid; }
 
 main {
   display: flex;
@@ -217,10 +223,14 @@ thead {
 .nombreArtista {
   display: flex;
   font-size: 60px;
+  margin: auto;
   margin-top: 120px;
   margin-bottom: 20px;
   justify-content: center;
-  color: red; }
+  color: black;
+  background-color: #860000;
+  width: fit-content;
+  border-radius: 12px; }
 
 .redesSociales {
   display: flex;
@@ -240,13 +250,14 @@ thead {
   margin: auto;
   margin-top: 30px;
   background-color: white;
-  border: red 3px solid;
+  border: #970000 3px solid;
   grid-area: tienda; }
 
 .fotoArtista {
   display: flex;
   justify-content: center;
-  margin: auto; }
+  margin: auto;
+  border: #830101 solid 2px; }
 
 /* Media Queries */
 @media (max-width: 1340px) {
@@ -292,7 +303,7 @@ thead {
 @media (max-width: 768px) {
   .ajustePrincipalImagenes {
     height: 1220px;
-    width: 320px;
+    width: 300px;
     margin-bottom: 50px; }
   .titulos {
     font-size: 50px;
@@ -340,3 +351,7 @@ thead {
     font-size: 52px; }
   .navegacion {
     font-size: 10px; } }
+
+@media (max-width: 390px) {
+  .tituloPrincipal {
+    font-size: 47px; } }
