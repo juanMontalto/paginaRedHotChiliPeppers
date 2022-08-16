@@ -1,136 +1,148 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&family=Josefin+Sans:ital,wght@1,700&display=swap');
+
 * {
-    margin:0;
-    padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 @import "variables", "header", "grid-area", "maps", "extend", "mixin", "footer";
-  
-  .titulos {
-    font-size: 60px;
-    font-style: bold;
-    text-align: center;
-    margin-top: 250px;
-    margin-bottom: 20px;
+
+.titulos {
+  font-size: 60px;
+  font-style: bold;
+  text-align: center;
+  margin-top: 250px;
+  margin-bottom: 20px;
+}
+
+body {
+  font-family: 'Anek Latin', sans-serif;
+  background: url(../img/inicio/background.jpg) center 70px;
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);
+  background-color: black;
+
+  &:before {
+    content: "";
+    width: 100%;
+    min-height: 1150px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(255, 3, 3, 0.068), rgb(0, 0, 0));
+    z-index: -1;
   }
-  
-  body {
-    font-family: 'Anek Latin', sans-serif;
-    background: url(../img/inicio/background.jpg) center 70px;
-    background-repeat: no-repeat;
-    color: rgb(255, 255, 255);
-    background-color: black;
-  
-    &:before {
-      content: "";
-      width: 100%;
-      min-height: 1150px;
-      position: absolute;
-      background: linear-gradient(180deg, rgba(255, 3, 3, 0.068), rgb(0, 0, 0));
-      z-index: -1;
-    }
-  }
+}
+
+.imagenMultimedia {
+  width: 1400px;
+  height: 770px;
+  margin: 10px;
+  border: rgb(131, 1, 1) solid 2px;
+}
+
+.ajustePrincipalImagenes {
+  margin: auto;
+  height: 300px;
+  width: 1230px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.ropa {
+  background-color: white;
+  border: 3px rgb(131, 1, 1) solid;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 70px;
+}
+
+.albums {
+  margin: auto;
+  margin-top: 30px;
+  height: 900px;
+  width: 1211px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: albums;
+}
+
+
+.fechas {
+  width: 1200px;
+  height: auto;
+  font-size: 35px;
+  margin: auto;
+  background-color: rgba(70, 70, 70, 0.507);
+}
+
+table {
+  width: 100%;
+}
+
+th,
+td {
+  border: solid 1px black;
+}
+
+thead {
+  background-color: #660101;
+  border-bottom: solid 3px #3f0000;
+}
+
+.nombreArtista {
+  display: flex;
+  font-size: 60px;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 20px;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(134, 0, 0);
+  width: fit-content;
+  border-radius: 12px;
+}
+
+.redesSociales {
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  font-size: 35px;
+  margin-right: 20px;
+}
+
+.mainMultimedia {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: multimedia;
+}
+
+.tienda {
+  height: 1816px;
+  width: 1217px;
+  margin: auto;
+  margin-top: 30px;
+  background-color: rgb(255, 255, 255);
+  border: rgb(151, 0, 0) 3px solid;
+  grid-area: tienda;
+}
+
+.fotoArtista {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+/* Media Queries */
+
+@media (max-width: 1570px) {
   .imagenMultimedia {
-    width:90%; 
-    height:8%;
-    margin: 10px;
-    border: rgb(131, 1, 1) solid 2px;
-  }
-  .ajustePrincipalImagenes {
-    margin: auto;
-    height: 300px;
-    width: 1230px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .ropa {
-    background-color: white;
-    border: 3px rgb(131, 1, 1) solid;
-  }
-  
-  main {
-    display: flex;
-    justify-content: center;
-    margin: 70px;
-  }
-  
-  .albums {
-    margin: auto;
-    margin-top: 30px;
-    height: 900px;
-    width: 1211px;
-    display: flex;
-    flex-wrap: wrap;
-    grid-area: albums;
-  }
-  
-  
-  .fechas {
-    width: 1200px;
     height: auto;
-    font-size: 35px;
-    margin: auto;
-    background-color: rgba(70, 70, 70, 0.507);
-  }
-  
-  table {
     width: 100%;
   }
-  
-  th, td {
-    border: solid 1px black;
-  }
-  
-  thead {
-    background-color: #660101;
-    border-bottom: solid 3px #3f0000;
-  }
-  
-  .nombreArtista {
-    display: flex;
-    font-size: 60px;
-    margin: auto;
-    margin-top: 120px;
-    margin-bottom: 20px;
-    justify-content: center;
-    color: rgb(0, 0, 0);
-    background-color: rgb(134, 0, 0);
-    width: fit-content;
-    border-radius: 12px;
-  }
-  
-  .redesSociales {
-    display: flex;
-    justify-content: flex-start;
-    text-decoration: none;
-    font-size: 35px;
-    margin-right: 20px;
-  }
-  
-  .mainMultimedia {
-    display: flex;
-    flex-wrap: wrap;
-    grid-area: multimedia;
-  }
-  
-  .tienda {
-    height: 1816px;
-    width: 1217px;
-    margin: auto;
-    margin-top: 30px;
-    background-color: rgb(255, 255, 255);
-    border: rgb(151, 0, 0) 3px solid;
-    grid-area: tienda;
-  }
-  
-  .fotoArtista {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-  }
-  /* Media Queries */
+}
 
 @media (max-width: 1340px) {
   .fotoArtista {
@@ -155,11 +167,6 @@
 
   .tituloPrincipal {
     font-size: 80px;
-  }
-
-  .imagenMultimedia {
-    height: auto;
-    width: 100%;
   }
 
   .tienda {

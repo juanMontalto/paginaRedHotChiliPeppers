@@ -172,8 +172,8 @@ body {
     z-index: -1; }
 
 .imagenMultimedia {
-  width: 90%;
-  height: 8%;
+  width: 1400px;
+  height: 770px;
   margin: 10px;
   border: #830101 solid 2px; }
 
@@ -213,7 +213,8 @@ main {
 table {
   width: 100%; }
 
-th, td {
+th,
+td {
   border: solid 1px black; }
 
 thead {
@@ -256,10 +257,14 @@ thead {
 .fotoArtista {
   display: flex;
   justify-content: center;
-  margin: auto;
-  border: #830101 solid 2px; }
+  margin: auto; }
 
 /* Media Queries */
+@media (max-width: 1570px) {
+  .imagenMultimedia {
+    height: auto;
+    width: 100%; } }
+
 @media (max-width: 1340px) {
   .fotoArtista {
     height: 100%;
@@ -275,9 +280,6 @@ thead {
     display: none; }
   .tituloPrincipal {
     font-size: 80px; }
-  .imagenMultimedia {
-    height: auto;
-    width: 100%; }
   .tienda {
     height: 2420px;
     width: 914px; }
