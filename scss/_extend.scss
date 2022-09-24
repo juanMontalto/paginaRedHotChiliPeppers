@@ -1,0 +1,18 @@
+/* Extend */
+
+.redirigirPaginas {
+    font-size: 30px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.redirigirPaginas2 {
+    @extend .redirigirPaginas;
+    text-decoration: bold;
+    color: #f30000;
+}
+
+.redirigirPaginas3 {
+    @extend .redirigirPaginas2;
+    font-size: 60px;
+}

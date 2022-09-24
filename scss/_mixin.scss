@@ -1,0 +1,17 @@
+/* Mixin */
+
+@mixin parrafos {
+    display: flex;
+    font-size: 180%;
+    text-align: justify;
+    padding: 10px 15px;
+    justify-content: center;
+}
+
+.textoBiografia {
+    @include parrafos;
+    background-color: rgba(250, 210, 132, 0.205);
+    border: 3px rgba(233, 202, 145, 0.692) solid;
+    color: rgba(233, 202, 145, 0.692);
+    margin: 20px 120px 0px 120px;
+}

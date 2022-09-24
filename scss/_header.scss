@@ -1,0 +1,39 @@
+.navegacion {
+  display: flex;
+  background: rgb(19, 18, 18);
+  justify-content: space-evenly;
+  height: 70px;
+  width: auto;
+  align-items: center;
+  z-index: -1;
+}
+
+.nav {
+  color: rgb(253, 252, 252);
+  font-size: 200%;
+  font-weight: bold;
+  transition: all 200ms;
+  text-decoration: none;
+
+  &:hover {
+    color: #c74646c5;
+    font-size: 300%;
+    transform: scale(1.15);
+  }
+}
+
+.tituloPrincipal {
+  font-family: 'Josefin Sans', sans-serif;
+  color: $color-titulos;
+  height: 75px;
+  width: fit-content;
+  font-size: $tam-fuente-titulos;
+  text-align: center;
+  margin: auto;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+li {
+  list-style-type: none;
+}

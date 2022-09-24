@@ -1,0 +1,59 @@
+/* Index */
+
+.bodyPadreGridIndex {
+  display: grid;
+  grid-template-areas: "header""main""section1""section2""section3""footer";
+}
+
+header {
+  grid-area: header;
+  top: 0;
+  z-index: 2;
+}
+
+.main {
+  grid-area: main;
+}
+
+.section1 {
+  grid-area: section1;
+}
+
+.section2 {
+  grid-area: section2;
+}
+
+.section3 {
+  grid-area: section3;
+}
+
+/* Biografia */
+.bodyPadreGridBiografia {
+  display: grid;
+  grid-template-areas: "header ""biografias""footer ";
+}
+
+.biografias {
+  grid-area: biografias;
+}
+
+/* Albumes */
+
+.padreGridBodyAlbum {
+  display: grid;
+  grid-template-areas: "header""albums""footer";
+}
+
+/* Multimedia */
+
+.padreGridBodyMultimedia {
+  display: grid;
+  grid-template-areas: "header""multimedia""footer";
+}
+
+/* Tienda */
+
+.padreGridBodyTienda {
+  display: grid;
+  grid-template-areas: "header""tienda""footer";
+}

@@ -1,0 +1,25 @@
+/* MAPS */
+$mapRedes: (
+    facebook: rgb(3, 3, 209),
+    instagram: rgb(255, 255, 87),
+    twitter:rgb(85, 190, 231)
+);
+
+@each $red,
+$color in $mapRedes {
+    .#{$red} {
+        color: $color;
+    }
+}
+
+/* Map - Get */
+
+$estilo: (
+    color:rgba(255, 228, 196, 0),
+    tamFuente:1 00px
+);
+
+.tituloPrincipal {
+    background-color: map-get($map: $estilo, $key: color);
+    font-size: map-get($map: $estilo, $key: tamFuente)
+}

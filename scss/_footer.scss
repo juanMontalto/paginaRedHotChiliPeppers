@@ -1,0 +1,34 @@
+/* Footer */
+
+.footer {
+    grid-area: footer;
+    padding-top: 70px;
+}
+
+.logoFooter {
+    display: flex;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.tituloRedesSociales {
+    color: red;
+    font-size: 40px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.redesSociales {
+    width: 100%;
+
+    li {
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+        padding: auto;
+        padding-top: 10px;
+        padding-bottom: 6px;
+    }
+}

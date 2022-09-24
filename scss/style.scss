@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&family=Josefin+Sans:ital,wght@1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import "variables", "header", "grid-area", "maps", "extend", "mixin", "footer";
+
+.titulos {
+  font-size: 60px;
+  font-style: bold;
+  text-align: center;
+  margin-top: 250px;
+  margin-bottom: 20px;
+}
+
+body {
+  font-family: 'Anek Latin', sans-serif;
+  background: url(../img/inicio/background.jpg) center 70px;
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);
+  background-color: black;
+
+  &:before {
+    content: "";
+    width: 100%;
+    min-height: 1150px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(255, 3, 3, 0.068), rgb(0, 0, 0));
+    z-index: -1;
+  }
+}
+
+.imagenMultimedia {
+  width: 1400px;
+  height: 770px;
+  margin: 10px;
+  border: rgb(131, 1, 1) solid 2px;
+}
+
+.ajustePrincipalImagenes {
+  margin: auto;
+  height: 300px;
+  width: 1230px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.ropa {
+  background-color: white;
+  border: 3px rgb(131, 1, 1) solid;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 70px;
+}
+
+.albums {
+  margin: auto;
+  margin-top: 30px;
+  height: 900px;
+  width: 1211px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: albums;
+}
+
+
+.fechas {
+  width: 1200px;
+  height: auto;
+  font-size: 35px;
+  margin: auto;
+  background-color: rgba(70, 70, 70, 0.507);
+}
+
+table {
+  width: 100%;
+}
+
+th,
+td {
+  border: solid 1px black;
+}
+
+thead {
+  background-color: #660101;
+  border-bottom: solid 3px #3f0000;
+}
+
+.nombreArtista {
+  display: flex;
+  font-size: 60px;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 20px;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(134, 0, 0);
+  width: fit-content;
+  border-radius: 12px;
+}
+
+.redesSociales {
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  font-size: 35px;
+  margin-right: 20px;
+}
+
+.mainMultimedia {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: multimedia;
+}
+
+.tienda {
+  height: 1816px;
+  width: 1217px;
+  margin: auto;
+  margin-top: 30px;
+  background-color: rgb(255, 255, 255);
+  border: rgb(151, 0, 0) 3px solid;
+  grid-area: tienda;
+}
+
+.fotoArtista {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+/* Media Queries */
+
+@media (max-width: 1570px) {
+  .imagenMultimedia {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1340px) {
+  .fotoArtista {
+    height: 100%;
+    width: 100%;
+  }
+
+  .textoBiografia {
+    margin: 20px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 1254px) {
+  .ajustePrincipalImagenes {
+    height: 620px;
+    width: 620px;
+  }
+
+  .fechas {
+    display: none;
+  }
+
+  .tituloPrincipal {
+    font-size: 80px;
+  }
+
+  .tienda {
+    height: 2420px;
+    width: 914px;
+  }
+
+  .albums {
+    height: 1211px;
+    width: 911px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .albums {
+    height: 1830px;
+    width: 608px;
+  }
+
+  .tienda {
+    height: 3633px;
+    width: 610px;
+  }
+}
+
+@media (max-width: 898px) {
+  .ajustePrincipalImagenes {
+    height: 620px;
+    width: 620px;
+  }
+
+  .tituloPrincipal {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ajustePrincipalImagenes {
+    height: 1220px;
+    width: 300px;
+    margin-bottom: 50px;
+  }
+
+  .titulos {
+    font-size: 50px;
+    margin-top: 0px;
+  }
+
+  .rhcpPrincipal {
+    display: none;
+  }
+
+  .tituloPrincipal {
+    font-size: 80px;
+    margin-bottom: 0px;
+  }
+
+  .navegacion {
+    font-size: 14px;
+  }
+
+  .textoBiografia {
+    font-size: 130%;
+  }
+}
+
+@media (max-width: 610px) {
+  .albums {
+    height: 3600px;
+    width: 300px;
+  }
+
+  .tituloPrincipal {
+    font-size: 70px;
+    margin-bottom: 0px;
+  }
+
+  .tienda {
+    height: 7268px;
+    width: 310px;
+  }
+}
+
+@media (max-width: 550px) {
+  .nombreArtista {
+    font-size: 300%;
+  }
+
+  .tituloPrincipal {
+    font-size: 62px;
+  }
+}
+
+@media (max-width: 500px) {
+  .titulos {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .navegacion {
+    font-size: 12px;
+  }
+
+  .textoBiografia {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .nombreArtista {
+    font-size: 200%;
+  }
+
+  .tituloPrincipal {
+    font-size: 52px;
+  }
+
+  .navegacion {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 390px) {
+  .tituloPrincipal {
+    font-size: 47px;
+  }
+}
