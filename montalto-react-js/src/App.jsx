@@ -1,40 +1,15 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
-import Titulo from './components/Titulo/Titulo'
-import Formulario from './components/Fomulario/Formulario'
-
+import ComponenteContainer from './components/ComponenteContainer/ComponenteContainer'
 
 function App() {
-  const [count, setCount] = useState(0)
-  const objStyle = {backgroundColor: 'red'}
-  let tituloApp = 'Titulo de App'
 
+  /* const objStyle = {backgroundColor: 'red'} */
   return (
-    <div className="App" style={ objStyle }>
-      <Titulo titulo={tituloApp} subTitulo={'Subtitulo de la App'} />
-      <Formulario />
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    <>
+      <ComponenteContainer />
+    </>
   )
 }
 

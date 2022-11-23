@@ -5,6 +5,30 @@
   text-align: center;
 }
 
+.navBar{
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  height: 113px;
+  background-color: rgb(139, 15, 15);
+  margin-top: -470px;
+  margin-left: -521px;
+  margin-right: -521px;
+}
+
+
+li{
+  list-style-type: none;
+  color: white;
+}
+
+
+.ropa {
+  display: flex;
+  margin-top: 45px;
+  font-size: 50px;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
