@@ -1,0 +1,42 @@
+[
+    {
+        "nombre": "Remera Gris",
+        "precio": 100,
+        "stock": 102,
+        "imagen": "../img/ropa/ropa_1.jpg",
+        "filtro": "remeras",
+        "id": 1
+    },
+    {
+        "nombre": "Pantalon Amarillo",
+        "precio": 80,
+        "stock": 243,
+        "imagen": "../img/ropa/ropa_14.png",
+        "filtro": "pantalones",
+        "id": 2
+    },
+    {
+        "nombre": "Short con Logo",
+        "precio": 60,
+        "stock": 151,
+        "imagen": "../img/ropa/ropa_4.jpg",
+        "filtro": "shorts",
+        "id": 3
+    },
+    {
+        "nombre": "Campera azul",
+        "precio": 140,
+        "stock": 0,
+        "imagen": "../img/ropa/ropa_2.jpg",
+        "filtro": "camperas",
+        "id": 4
+    },
+    {
+        "nombre": "Gorro con Logo",
+        "precio": 30,
+        "stock": 53,
+        "imagen": "../img/ropa/ropa_7.png",
+        "filtro": "gorros",
+        "id": 5
+    }
+]

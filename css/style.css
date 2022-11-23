@@ -3,6 +3,66 @@
   margin: 0;
   padding: 0; }
 
+  .imagenTienda {
+    width: 260px;
+    height: 250px;
+    margin-top: 100px
+    
+  }
+
+  .tituloCarrito{
+    color: black;
+    margin-left: 10px;
+  }
+  .text-right{
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  #boton-vaciar{
+    margin-left: 10px;
+  }
+  #items{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    
+
+   
+  }
+
+  .card-title{
+    font-size: 30px;
+    font:bolder;
+  }
+
+  #catalogo{
+    background: rgb(255, 255, 255);
+    height: 1920px;
+    display: flex;
+  }
+
+  .card{
+    border: 5px;
+    border-color: black;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(210, 84, 84);
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  #titulo{
+    color: rgb(234, 103, 103);
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    font-size: 60px;
+  }
+
+  .nuevaCard{
+    background-color: red;
+  }
+/* Tienda */
 .navegacion {
   display: flex;
   background: #131212;
@@ -246,7 +306,7 @@ thead {
   grid-area: multimedia; }
 
 .tienda {
-  height: 1816px;
+  height: 1000px;
   width: 1217px;
   margin: auto;
   margin-top: 30px;
